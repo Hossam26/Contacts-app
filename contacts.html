@@ -1,0 +1,71 @@
+<html>
+
+<head>
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/start.css">
+
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <h1 id="wel" class="navbar-brand text-white"> </h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a id="logout"><button id="goindex" class="btn">Logout</button></a>
+    </div>
+  </nav>
+  <div class="container py-4">
+    <h1 class="text-center">Contacts List</h1>
+    <div class="form-group">
+      <label>Name</label>
+      <input id="name" type="text" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Age</label>
+      <input id="age" type="number" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Salary</label>
+      <input id="salary" type="number" class="form-control">
+    </div>
+    <div class="form-group">
+      <label>Phone</label>
+      <input id="phone" type="number" class="form-control">
+    </div>
+    <h5 id="alertTxt" class=" text-center"></h5>
+    <div id="addbtn" class="btn text-white float-right bg-info">add Contact</div>
+    <div class="clearfix"></div>
+    <input class="form-control mx-auto my-3 w-75" onkeyup="search(this.value)" placeholder="Search by name">
+    <table class="table">
+      <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Salary</th>
+        <th>Phone</th>
+        <th></th>
+        <th></th>
+
+      </thead>
+      <tbody id="tableBody">
+
+      </tbody>
+    </table>
+
+
+
+  </div>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/contacts.js"></script>
+
+</body>
+
+</html>
